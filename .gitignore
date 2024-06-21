@@ -1,0 +1,7 @@
+__pycache__
+.vercel
+.vscode
+listener's voice
+text.html
+temp_audio/*
+vercel.json

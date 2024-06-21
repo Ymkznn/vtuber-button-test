@@ -1,0 +1,309 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Standard syntax */
+}
+
+label {
+    user-select: none;
+}
+.navbar{
+    background-color: #9f6e71;
+}
+
+.dropdown-menu{
+    background-color: #9f6e71;
+}
+.lang-switch:focus{
+    background-color: #fff;
+}
+.lang-switch:active{
+    background-color: #eb5d85;
+}
+
+.navbar.fixed-top{
+    position: sticky;
+    z-index: 999;
+}
+.offcanvas-header,.offcanvas-body,.offcanvas-title{
+    background-color: #4f3738;
+}
+
+#SidebarLabel{
+    text-align: center;
+}
+.options{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.category_area {
+    background-color: #fdb5cd;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.input-group-1{
+    position: relative;
+    max-width: 60%;
+}
+
+.input-group-2{
+    max-height: 10%;
+    margin-right: 50px;
+    position: relative;
+    max-width: 45%; /* Optional: Set max-width for the input group */
+    margin: 0;
+}
+.dropdown{
+    text-align: right;
+    max-width: 30%;
+}
+.input-group-2 .form-control {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 25px; /* Optional: Adjust border radius as needed */
+    transition: none; /* Remove all transitions */
+    box-shadow: none;
+    z-index: 1;
+}
+
+.form-control::placeholder {
+    color: #bdb3b3; /* 设置占位符颜色为浅灰色 */
+    font-weight: bold;
+}
+.form-control::placeholder {
+    color: #bdb3b3; /* 设置占位符颜色为浅灰色 */
+    font-weight: bold;
+}
+
+.input-group-2  .form-control:focus {
+    background-color: #fafafa;
+    border-left-width: 0;
+    border-color: #4eb8ff;
+    z-index: 1;
+}
+
+.input-group-2 .btn {
+    height: 50px;
+    font-size: 25px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    right: 5px; /* Adjust this value based on the width of the span */
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 100%;
+    opacity: 0.7; /* Set button opacity */
+    z-index: 2;
+}  
+
+.input-group-2 .btn:hover{
+    background-color: #eb5d85;
+    opacity: 0.3; /* Set button opacity */
+}
+
+.input-group-2 .input-group-text {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 25px;
+    width: 60px;
+}
+.input-group-2 .input-group-text img {
+    height: 100%; /* 设置图标高度 */
+    width: 30px; /* 设置图标宽度 */
+    margin-left: 10px;
+  }
+input[type=range].styled-slider {
+    height: 1em;
+    -webkit-appearance: none;
+    background: none;
+    outline: none;
+    width:150px;
+  }
+  
+  /*progress support*/
+  input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 0.7em + var(--ratio) * (100% - 0.7em));
+  }
+  
+  /*webkit*/
+  input[type=range].styled-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0.7em;
+    height: 1.5em;
+    border-radius: 0.3em;
+    background: #eb5d85;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 0 2px black;
+    margin-top: calc(max((0.2em - 1px - 1px) * 0.5,0px) - max(1.5em * 0.5,1px));
+  }
+  
+  input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 0.2em;
+    border: 1px solid #B2B2B2;
+    border-radius: 0.5em;
+    background: #FFFFFF;
+    box-shadow: none;
+  }
+
+  input[type=range].styled-slider::-webkit-slider-thumb:hover {
+    background: #cf3242;
+  }
+  
+  input[type=range].styled-slider:hover::-webkit-slider-runnable-track {
+    background: #e5e5e5;
+    border-color: #9A9A9A;
+  }
+  
+  input[type=range].styled-slider::-webkit-slider-thumb:active {
+    background: #893941;
+  }
+  
+  input[type=range].styled-slider:active::-webkit-slider-runnable-track {
+    background: #f5f5f5;
+    border-color: #C1C1C1;
+  }
+  
+  input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#FDB5CD,#FDB5CD) 0/var(--sx) 100% no-repeat, #FFFFFF;
+  }
+  
+  input[type=range].styled-slider.slider-progress:hover::-webkit-slider-runnable-track {
+    background: linear-gradient(#FDB5CD,#FDB5CD) 0/var(--sx) 100% no-repeat, #e5e5e5;
+  }
+  
+  input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-track {
+    background: linear-gradient(#FDB5CD,#FDB5CD) 0/var(--sx) 100% no-repeat, #f5f5f5;
+  }
+
+.button-subdirectory{
+    position: absolute;
+    color: #4f3738;
+    right: 10px;
+    width: 70px;
+    z-index: 1;
+    border: none;
+    border-radius: 25px;
+}
+.button-subdirectory:hover{
+    background-color: rgba(217, 58, 74, 0.7);
+    border: none;
+}
+.button-subdirectory:active{
+    background-color: rgb(253, 181, 205);
+    border: none;
+}
+
+#container_area {
+    flex-grow: 1;
+    margin: 0;
+    padding-top: 10px;
+}
+#autopause_on {
+    margin-right: 10px;
+}
+#autopause_off {
+    margin-right: 10px;
+}
+#footer_left{
+    font-size:15px;
+    margin:0 auto;
+    white-space: pre-line;
+}
+#declaration{
+    margin:0 auto;
+}
+
+.lang-switch{
+    color: #fff;
+}
+
+#footer{
+    border-radius: 5px;
+    background-color: #ececec;
+}
+.sources{
+    margin:0 auto;
+}
+.cate-body button{
+    position: relative;
+    background-color: #eb5d85;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.cate-body .content {
+    position: relative;
+    z-index: 2; /* Ensure content is above the progress bar */
+}
+.cate-body button:hover{
+    background: #fdb5cd;
+}
+.cate-body button:active{
+    background: #fdb5cd;
+}
+.cate-body button:focus{
+    background: #d93848;
+}
+.cate-body .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure progress bar is behind the content */
+    background-color: #eb5d85;
+}
+.cate-body .progress-bar {
+    height: 100%;
+    background-color: #d93848; /* Single color for the progress bar */
+    transition: width 0.1s linear; /* Smooth transition for width change */
+}
+.main-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .input-group-1{
+        position: relative;
+        width: 100%; /* Optional: Set max-width for the input group */
+    }
+    
+    .input-group-2{
+        max-height: 10%;
+        margin-right: 50px;
+        position: relative;
+        max-width: 95%; /* Optional: Set max-width for the input group */
+        margin: 0;
+    }
+    .dropdown{
+        width: 40%;
+        text-align: right;
+    }
+    .cate-body{
+        text-align: center;
+    }
+    .col-md-6,#declaration,#footer_left{
+        font-size: 10px;
+        text-align:center
+    }
+    .cate-body button{
+        font-size: 15px;
+    }
+}
